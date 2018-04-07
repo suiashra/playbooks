@@ -4,7 +4,7 @@
     name: "{{ sname }}"
     password: "{{ 'Abc123' | password_hash('sha512') }}"
     comment: "{{ sfull }}"
-    shell: /bin/bash
+    shell: /usr/bin/bash
     group: wheel
     groups: wheel
     home: /home/{{ sname }} |
